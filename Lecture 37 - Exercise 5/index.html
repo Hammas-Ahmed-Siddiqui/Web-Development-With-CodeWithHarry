@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    </style>
+    <style>
+        /* font-family: 'Poppins', sans-serif; */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primcolor: #776B5D;
+            --seccolor: #B0A695;
+            --tercolor: #a7a39e;
+            --textcolor: #F3EEEA;
+        }
+
+        body {
+            background-color: var(--seccolor);
+        }
+
+        nav {
+            background-color: var(--primcolor);
+            padding: 15px;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline;
+            padding: 0 25px;
+        }
+
+        nav ul li a {
+            font-weight: bolder;
+            color: var(--textcolor);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: var(--seccolor);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            background-color: var(--primcolor);
+            width: 100%;
+            height: 60px;
+            margin-top: 6rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer div {
+            font-weight: bolder;
+            color: var(--textcolor);
+            padding: 25px;
+        }
+
+        .pic {
+            height: 70px;
+        }
+
+        .logo {
+            position: fixed;
+            bottom: 57px;
+            right: 10px;
+        }
+
+        section {
+            width: 96%;
+            height: 500px;
+            margin: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--primcolor);
+        }
+
+        .box-1 {
+            border: 2px solid black;
+            height: 377px;
+            width: 500px;
+            margin: 200px;
+        }
+
+        .box-2 {
+            border: 2px solid black;
+            height: 377px;
+            width: 500px;
+            margin: 200px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 500px;
+            margin: auto;
+            margin-bottom: 100px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 3rem;
+            text-align: center;
+            background-color: var(--tercolor);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container p {
+            color: var(--textcolor);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+    </section>
+    <div class="container">
+        <p>I am learning from Sigma Web Development Course by Code With Harry</p>
+    </div>
+    <div class="logo">
+        <img src="Yellow_Minimalist_Round_Shaped_Cafe_Logo-removebg-preview.png" alt="logo" class="pic">
+    </div>
+    <footer>
+        <div>© Hammas Ahmed Siddiqui 2023 - All Rights Reserved</div>
+    </footer>
+</body>
+
+</html>

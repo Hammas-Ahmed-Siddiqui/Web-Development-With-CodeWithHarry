@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Multi Color Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primcolor: #3A4D39;
+            --seccolor: #4F6F52;
+            --tercolor: #739072;
+            --quatcolor: #ECE3CE;
+            --quincolor: #363062;
+            --defpad: 15px;
+            --defop: 0.5;
+        }
+
+        body {
+            background-color: var(--primcolor);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Center vertically */
+            width: 100%;
+            height: 70px;
+            background-color: var(--quincolor);
+        }
+
+        ul {
+            padding: 50px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 10px;
+            color: var(--quatcolor);
+        }
+
+        .con {
+            background-color: var(--primcolor);
+            border-radius: 10px;
+        }
+
+        .con:hover {
+            background-color: var(--quatcolor);
+            color: var(--tercolor);
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: var(--tercolor);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 50px;
+            color: var(--quatcolor);
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .logo:hover {
+            color: var(--seccolor);
+        }
+
+        .content {
+            text-align: center;
+            margin: 23px 300px;
+            padding: var(--defpad);
+            font-style:oblique ;
+            font-size: 20px;
+            color: var(--quatcolor);
+            border: 5px solid var(--quatcolor);
+            height: auto;
+            width: 50vw;
+            background-color: var(--quincolor);
+            border-radius: 25px;
+        }
+
+        .content p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="head">
+        <div class="logo-container">
+            <h3 class="logo">Hammas Ahmed Siddiqui</h3>
+        </div>
+        <ul>
+            <li>Service</li>
+            <li>Projects</li>
+            <li>About</li>
+            <li class="con">Contact</li>
+        </ul>
+    </nav>
+    <article class="content">
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur tempore quidem dolor eveniet ex
+            impedit nemo magnam nostrum, quia soluta inventore natus nobis odit reprehenderit illum hic quisquam iusto!
+            Et dolores optio eveniet labore numquam nesciunt exercitationem alias, veritatis facilis repudiandae impedit
+            architecto nostrum similique iure in ducimus mollitia doloremque est eaque! Laboriosam porro eos nemo facere
+            natus officiis labore tempora. Nihil eaque perspiciatis voluptate deserunt laborum doloribus ipsum quam
+            saepe quae animi ratione tempore rerum, porro sit itaque aliquid accusamus quasi consequatur corporis! Ex
+            iure quisquam, sint consequuntur ut magni natus cumque provident reprehenderit, recusandae culpa a debitis
+            autem laboriosam? Earum, labore obcaecati! Omnis, dolorem qui. Praesentium fugit totam, voluptate expedita
+            culpa odio. Dicta repellendus aliquam alias deleniti sed harum maxime, voluptatibus labore distinctio,
+            velit, explicabo maiores quaerat blanditiis. Fugit, aliquid repudiandae adipisci dolore odit error ea fugiat
+            voluptatum, culpa numquam, ex vel? Eos dolor labore tempora exercitationem, fuga libero, minima perspiciatis
+            consequatur numquam placeat deleniti recusandae voluptatem nihil omnis, tempore doloremque incidunt
+            asperiores at dolore ea fugiat pariatur quod. Magni quidem laudantium cupiditate in sunt, quae eveniet
+            fugiat vero necessitatibus sequi expedita vitae quis corrupti praesentium perferendis dicta ducimus amet
+            esse distinctio, nihil accusantium reiciendis quos. Voluptates.</p>
+    </article>
+</body>
+
+</html>

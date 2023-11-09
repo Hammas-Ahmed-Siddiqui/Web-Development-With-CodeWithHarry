@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            color: red;
+        }
+        /* Class Selector */
+        .red{
+            background-color: blue;
+        }
+        /* ID Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p{
+            color: red;
+            background-color: aquamarine;
+        }
+        div > article > p{
+            font-size: 2em;
+            color: blueviolet;
+        }
+
+        /* Descendant Selector */
+        div p{
+            color: brown;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: palegreen;
+        }
+        a:link{
+            color: darkolivegreen;
+        }
+        a:active{
+            background-color: aqua;
+        }
+        a:hover{
+            background-color: aquamarine;
+        }
+        p:first-child{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div>
+        <h2>Element Selector</h2>
+    </div>
+    <div class="red">
+        <h2>Attribute Selector</h2>
+    </div>
+    <div id="green">
+        <h2>ID Selector</h2>
+        <p>I am a para Inside div</p>
+    </div>
+    <div class="bad" id="hab">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ut repudiandae, ea fugiat nobis alias.</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sit omnis architecto dicta unde sequi accusantium, commodi quibusdam ipsam aut, neque maxime explicabo ullam praesentium?</p>
+        </article>
+        <article>
+            <section>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, molestiae quo hic ut fugiat adipisci at! In incidunt molestiae eveniet vel omnis ipsum nesciunt soluta!
+                </p>
+            </section>
+        </article>
+    </div>
+    <a target="_blank" href="https://www.google.com/">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade</title>
+    <style>
+        /* The Specificity of Element selector is: 1 */
+        h1{
+            color: aqua;
+        }
+        /* The Specificity of Class selectors, attribute selectors, and pseudo-classes is: 10 */
+        .yellow{
+            color: yellow;
+        }
+        /* The Specificity of Class selectors, attribute selectors, and pseudo-classes is: 10 */
+        h1.cred{
+            color: red;
+        }
+        /* The Specificity of Class selectors, attribute selectors, and pseudo-classes is: 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* Attribute Selector */
+
+        /* The Specificity of Class selectors, attribute selectors, and pseudo-classes is: 10 */
+        [data-x=a]{
+            color: bisque;
+        }
+        
+        /* Position and order of appearance: the order in which your CSS rules appear:
+        The font color should be bisque.
+
+        But the specificity of .cred is 11 because it is written as h1.cred so;
+        Specificity of Element = 1
+        Class selectors, attribute selectors, and pseudo-classes is: 10
+        1 + 10 = 11*/
+
+
+        /* The Specificity of !important is: 10000 */
+        h3{
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- the order of specificity is:
+
+    Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+        <p><a href="https://www.codewithharry.com/tutorial/css-specificity/">CSS Specificity</a></p>
+        <h2 style="color: blue;">Inline Style has the highest Specificity</h2>
+        <h3 style="color: blue;">!important can overwrite Inline Style</h3>
+    </div>
+    <h4>Specificity Calculation</h4>
+    <p>To calculate specificity, assign a value to each part of the selector:</p>
+    <ol>
+        <li>Universal Selector: 0</li>
+        <li>Element selectors and pseudo-elements: 1</li>
+        <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+        <li>ID selectors: 100</li>
+        <li>Inline styles: 1000</li>
+        <li>Inline styles: 10000</li>
+    </ol>
+</body>
+</html>

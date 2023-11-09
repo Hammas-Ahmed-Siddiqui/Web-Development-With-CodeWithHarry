@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child {
+            color: red;
+        }
+        .box:nth-child(2)::first-line{
+            color: brown;
+        }
+        .boxes *{
+            color: blue;
+        }
+        .boxes::before{
+            content: "Hammas Ahmed Siddiqui";
+            font-size: 40px;
+            color:aquamarine ;
+            /* Pseudo Elements */
+        }
+        .boxes::after{
+            content: "Hammas Ahmed Siddiqui";
+            color:rgb(67, 3, 3) ;
+            /* Pseudo Elements */
+        }
+        ::selection{
+            color: aliceblue;
+            background-color: black;
+        }
+        .box::first-letter{
+            font-size: 20px;
+            color: salmon;
+        }
+        input::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a box</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laborum voluptas accusamus! Error totam quo ullam culpa maiores vitae repellendus placeat voluptas atque ipsam amet, accusantium reprehenderit? Velit tenetur perspiciatis explicabo consequuntur at soluta omnis quod id voluptate unde ullam repudiandae earum, incidunt obcaecati esse rerum dolores excepturi recusandae minima. Aut illum magni quisquam totam iusto a pariatur officiis eveniet, enim quidem voluptatum eos magnam soluta modi, quod non maiores suscipit architecto ducimus vero necessitatibus doloribus veniam recusandae? Doloribus accusamus delectus dolorem reiciendis blanditiis eius nobis ipsa, optio quas aut fugiat suscipit deserunt quae cum ullam recusandae temporibus esse a?</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type Your Name">
+    </div>
+</body>
+
+</html>

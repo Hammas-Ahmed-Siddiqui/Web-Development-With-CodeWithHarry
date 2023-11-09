@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <ol>
+        <li>Universal Selector: 0</li>
+        <li>Element selectors and pseudo-elements: 1</li>
+        <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+        <li>ID selectors: 100</li>
+        <li>Inline styles: 1000</li>
+    </ol>
+
+
+    <p>a.harryclass.rohan-class[href]:hover {
+        color: red;
+      }</p>
+
+    <h3>Solution</h3>
+
+    <p>To calculate the specificity value of the selector a.harryclass.rohan-class[href]:hover, you can break down its components:</p>
+    <ol>
+        <li>Element selectors: a contributes 1 point.</li>
+        <li>Class selectors: .harryclass and .rohan-class each contributes 10 points, totaling 20 points.</li>
+        <li>Attribute selector: [href] contributes 10 points.</li>
+        <li>Pseudo-class: :hover adds another 10 points.</li>
+    </ol>        
+    <div>
+        <p>Add up all these values:</p>
+        <p>1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41.</p>
+        <p>So, the specificity value of the selector a.harryclass.rohan-class[href]:hover will be 41.</p>
+    </div>
+</body>
+</html>

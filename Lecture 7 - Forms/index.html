@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets learn Forms</title>
+</head>
+<body>
+    <h1>Application For Addmission in Web-Development Sigma Course</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your Username" autofocus required>
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to My Newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter Your Comment Here!</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <select name="course">
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Generative AI">Generative AI</option>
+            </select>
+        </div>
+    </form>
+
+</body>
+</html>

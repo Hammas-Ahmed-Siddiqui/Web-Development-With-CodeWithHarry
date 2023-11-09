@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX MODEL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: yellow;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am BOX!</div>
+    <div class="box box2">I am another BOX!</div>
+    <p>The total width and height of the element is calculated with the formula:
+
+        Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+        
+        Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin</p>
+    <h2>Margine Collapse</h2>
+    <p>If margine of 2 elements are overlaping the maximum margine will apply only once❗
+        <br><img src="Margine Collapse.png" alt="Margin Collapse">
+    </p>
+    <!-- <img src="box-model-1.png" alt="CSS BOX MODEL"> -->
+</body>
+
+</html>

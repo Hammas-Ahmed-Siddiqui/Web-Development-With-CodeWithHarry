@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image, Lists, and Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img height="200" src="images (1).jpeg" alt="Ancient Art">
+    <br>
+    <!-- <img width="1000" height="200" src="images (1).jpeg" alt="Ancient Art"> -->
+        <table>
+            <!-- <b> is used to bold the text 
+            <big> is used to increase the text size -->
+            <caption><b><big>Students Detail</big></b></caption>
+    <thead>        
+            <tr>
+                <th>Name</th>
+                <th>University</th>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Semester</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Hammas Ahmed Siddiqui</td>
+                <td>Dow University of Health Sciences</td>
+                <td>BBA in Healthcare Management</td>
+                <td>4th Year</td>
+                <td>8th Semester</td>
+            </tr>
+            <tr>
+                <td>NED University</td>
+                <td>Diploma in Data Science</td>
+                <td>1st Year</td>
+                <td>3rd Module</td>
+            </tr>
+            <tr>
+                <!-- colspan is basicly just like merging two cells in excel in a row -->
+                <td rowspan="2">Kaab Hasan Siddiqui</td>
+                <td>Dow University of Health Sciences</td>
+                <td>BBA in Healthcare Management</td>
+                <td>4th Year</td>
+                <td>8th Semester</td>
+            </tr>
+            <tr>
+                <td>NED University</td>
+                <td>Diploma in Data Science</td>
+                <td>1st Year</td>
+                <td>3rd Module</td>
+            </tr>
+            <tr>
+                <!-- colspan is basicly just like merging two cells in excel in a column -->
+                <td>Obada Amir</td>
+                <td colspan="4">ACCA</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer</td>
+                <td>Footer</td>
+                <td>Footer</td>
+                <td>Footer</td>
+            </tr>
+        </tfoot>
+        </table>
+
+        <h3>Unordered List</h3>
+        <ul style="list-style-type: lower-greek;">
+            <li>Talal</li>
+            <li>Akrama</li>
+            <li>Moiz</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol type="A">
+            <li>Talal</li>
+            <li>Akrama</li>
+            <li>Moiz</li>
+        </ol>
+        <h3>Defination List</h3>
+        <dl>
+            <dt>Lorem, ipsum.</dt>
+        </dl>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, consequatur eaque. Nisi nemo aperiam, laudantium ea possimus est ratione modi!</dd>
+        <dl>
+            <dt>Lorem, ipsum.</dt>
+        </dl>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, consequatur eaque. Nisi nemo aperiam, laudantium ea possimus est ratione modi!</dd>
+</body>
+
+</html>

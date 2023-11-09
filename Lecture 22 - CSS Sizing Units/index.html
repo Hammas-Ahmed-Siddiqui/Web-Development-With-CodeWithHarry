@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        body{
+            background-color:azure ;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            font-size: 50px;
+            color: darkred;
+            text-decoration:underline ;
+            text-decoration-color:aqua ;
+            text-decoration-style: double;
+            letter-spacing: 10px;
+            text-align: center;
+        }
+        .sub{
+            font-size: 30px;
+            color: darkblue;
+            line-height: 30px;
+            text-align: center;
+        }
+        .box{
+            background-color: aqua;
+            color: blue;
+            border: 2px solid red;
+            /* width: 1920px; */
+            width: 80vw;
+            /* vw = viewport width */
+            height: 5vh;
+            /* vh = viewport height */
+            margin: auto;
+            /* margin: auto; is ka mtlb ham left and right sa same margin lagana chata taka cheez mid main ajai "Margin auto and width srif block element pa hota ha inline pa nhi!" */
+            box-sizing: border-box;
+        }
+        .mycont{
+            background-color: aqua;
+            color: blue;
+            border: 4px solid darkred;
+            width: 80vw;
+            height: 10vh;
+            margin: 23px auto;
+            font-size: 25px;
+        }
+        .contanier{
+            background-color: aqua;
+            color: blue;
+            border: 2px solid red;
+            /* width: 1920px; */
+            width: 80vw;
+            /* vw = viewport width */
+            margin: 23px auto;
+            min-height: 80vh;
+            /* vh = viewport height */
+            /* margin: auto; is ka mtlb ham left and right sa same margin lagana chata taka cheez mid main ajai "Margin auto and width srif block element pa hota ha inline pa nhi!" */
+            box-sizing: border-box;
+        }
+        .contanier p{
+            font-size: 2em;
+            /* inherit size/Original size: 18px
+            1 em = value of inherit size  */
+        }
+
+
+        /* html is usualy the root element and rem is root em.
+        if;
+
+
+        html{
+            font-size: 12;
+        }
+
+
+        .box{
+            font-size: 2rem;
+            the above means 2 times of the root em or rem
+        } */
+    </style>
+</head>
+<body>
+    <h1 class="main">CSS Sizing Units ❗</h1>
+    <h2 class="sub">px, rem, em, vh, vw, % & more 😓</h2>
+    <div class="mycont">
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">CSS values and units</a>
+        <ol>
+            <li>vmin</li>
+            <li>vmax</li>
+        </ol>
+    </div>
+    <div class="contanier">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure perspiciatis quas. Eum tenetur asperiores dignissimos voluptatem vitae accusantium aliquam exercitationem laborum optio dolores veniam, incidunt doloribus nam amet. Eum consequatur aperiam excepturi nisi! Magni sunt autem deserunt totam rerum est nesciunt laudantium quam voluptatibus? Voluptatum nesciunt consequatur reprehenderit nisi aspernatur eaque vero eius esse deserunt?
+            <p>
+                vmin =
+            </p>
+        </p>
+    </div>
+    <div class="box">
+        This is a box
+    </div>
+</body>
+</html>

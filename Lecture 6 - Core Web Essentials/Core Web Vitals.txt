@@ -1,0 +1,36 @@
+SEO = Search Engine Optimization
+- Content
+- Title ( Title should reflect your page content. )
+    For Example:
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="">
+            <title>Core Web Essentials</title>
+        </head>
+        <body>
+            <h1> Core Web Essentials </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi commodi, fugit atque quae ullam odio tenetur! Repellendus, illo. Eligendi eius placeat quam similique, obcaecati aspernatur. Temporibus sint optio sit.</p>
+        </body>
+- Meta description
+        For Example:
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="This pagle explains about core web essentials like LCP, CLS, and Fid">
+            <title>Core Web Essentials</title>
+        </head>
+        <body>
+            <h1> Core Web Essentials </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi commodi, fugit atque quae ullam odio tenetur! Repellendus, illo. Eligendi eius placeat quam similique, obcaecati aspernatur. Temporibus sint optio sit.</p>
+        </body>
+
+
+Core Web Vitals
+
+Largest Contentful Paint (LCP): measures loading performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.
+
+Cumulative Layout Shift (CLS): measures visual stability. To provide a good user experience, pages should maintain a CLS of 0.1. or less.
+
+First Input Delay (FID): measures interactivity. To provide a good user experience, pages should have a FID of 100 milliseconds or less.
+        For example: If a user click on a button how much time it'll take to respond 

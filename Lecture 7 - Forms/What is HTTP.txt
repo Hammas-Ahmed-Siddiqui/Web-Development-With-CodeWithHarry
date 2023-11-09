@@ -1,0 +1,19 @@
+HTTP stands for Hypertext Transfer Protocol. It is an application layer protocol used for transmitting and receiving data on the World Wide Web. HTTP is the foundation of data communication on the internet and is used for various purposes, including fetching web pages, sending and receiving data between a client (usually a web browser) and a server (a web server or another web service).
+
+Key features of HTTP include:
+
+Statelessness: Each HTTP request from a client to a server is independent, meaning that the server does not maintain any information about previous requests. This statelessness simplifies the design and implementation of web servers.
+
+Request-Response Model: HTTP operates on a request-response model, where a client (typically a web browser) sends an HTTP request to a server, and the server responds with an HTTP response containing the requested data or an acknowledgment of the request.
+
+Methods: HTTP defines a set of request methods or verbs, such as GET (retrieve data), POST (submit data to be processed), PUT (update data), DELETE (remove data), and others. These methods specify the action to be performed by the server in response to the request.
+
+URLs (Uniform Resource Locators): URLs are used to identify and locate resources on the web. An HTTP request typically includes a URL, which specifies the address of the resource to be retrieved or operated on.
+
+Headers: Both HTTP requests and responses include headers, which provide metadata about the request or response. Headers can convey information about content type, content length, caching instructions, and more.
+
+Status Codes: HTTP responses include status codes, which indicate the outcome of the request. Common status codes include 200 (OK, request successful), 404 (Not Found, requested resource not found), 500 (Internal Server Error, server error), and others.
+
+Security: HTTP can be used with additional security mechanisms, such as HTTPS (HTTP Secure), which encrypts data transmission to protect against eavesdropping and data tampering.
+
+HTTP is a fundamental protocol that enables the exchange of text, images, videos, and other data on the internet. It forms the basis for the World Wide Web, allowing users to browse web pages, interact with web applications, and access a wide range of online resources.

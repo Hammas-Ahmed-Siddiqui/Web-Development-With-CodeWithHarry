@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primcolor: #3A4D39;
+            --seccolor: #4F6F52;
+            --tercolor: #739072;
+            --quatcolor: #ECE3CE;
+            --quincolor: #363062;
+            --defpad: 15px;
+            --defop: 0.5;
+        }
+
+        body {
+            background-color: var(--primcolor);
+        }
+
+        nav {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Center vertically */
+            width: 100%;
+            height: 70px;
+            background-color: var(--quincolor);
+        }
+
+        ul {
+            padding: 50px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 10px;
+            color: var(--quatcolor);
+        }
+
+        .con {
+            background-color: var(--primcolor);
+            border-radius: 10px;
+        }
+
+        .con:hover {
+            background-color: var(--quatcolor);
+            color: var(--tercolor);
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: var(--tercolor);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 50px;
+            color: var(--quatcolor);
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .logo:hover {
+            color: var(--seccolor);
+        }
+
+        .content {
+            text-align: center;
+            margin: 23px 370px;
+            padding: var(--defpad);
+            font-style: oblique;
+            font-size: 20px;
+            color: var(--quatcolor);
+            border: 5px solid var(--quatcolor);
+            height: auto;
+            width: 50vw;
+            background-color: var(--quincolor);
+            border-radius: 25px;
+        }
+
+        .content p {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            padding: 90px 50px;
+            color: var(--quatcolor);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content a {
+            color: var(--quatcolor);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="head">
+        <div class="logo-container">
+            <h3 class="logo">Hammas Ahmed Siddiqui</h3>
+        </div>
+        <ul>
+            <li>Service</li>
+            <li>Projects</li>
+            <li>About</li>
+            <li class="con">Contact</li>
+        </ul>
+    </nav>
+    <h1>My Bookmarks</h1>
+    <article class="content">
+        <h4>Primary Bookmarks</h4>
+        <p>
+        <p><a target="_blank" href="https://totalsportek.pro/date/today11/">Football Match</a></p>
+        <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w">Sigma Web
+                Development Course</a></p>
+        <p><a target="_blank" href="https://www.youtube.com/">Youtube</a></p>
+        <p><a target="_blank" href="https://www.w3schools.com/html/default.asp">HTML w3schools</a></p>
+        <p><a target="_blank" href="https://github.com/CodeWithHarry/Sigma-Web-Dev-Course">Sigma Web Development Course
+                github</a></p>
+        </p>
+    </article>
+    <article class="content">
+        <h4>Data Science Bookmarks</h4>
+        <p>
+        <p><a target="_blank" href="https://www.w3schools.com/python/numpy/default.asp">Numpy</a></p>
+        <p><a target="_blank" href="https://www.w3schools.com/python/pandas/">Pandas</a></p>
+        <p><a target="_blank" href="https://www.w3schools.com/python/matplotlib_intro.asp">Matplotlib</a></p>
+        <p><a target="_blank" href="https://www.w3schools.com/python/python_ml_getting_started.asp">Machine Learning</a>
+        </p>
+        <p><a target="_blank" href="https://www.w3schools.com/python/python_mysql_getstarted.asp">Python MySQL</a></p>
+        <p><a target="_blank" href="https://www.w3schools.com/python/python_mongodb_getstarted.asp">Python MongoDB</a>
+        </p>
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=hlGoQC332VM">SQL Full Course</a></p>
+        <p><a target="_blank" href="https://www.youtube.com/playlist?list=PL9XvIvvVL50Gjd71BlItG6JhnBUBNvPD3">AI and
+                Data Science 6 Months Track</a></p>
+        </p>
+    </article>
+    <article class="content">
+        <h4>PL 300 Journey</h4>
+        <p>
+        <p><a target="_blank" href="https://www.examtopics.com/exams/microsoft/pl-300/view/">PL 300 practice website:
+                1</a></p>
+        <p></p><a target="_blank" href="https://www.passnexam.com/microsoft/pl-300">PL 300 practice website: 2</a></p>
+        <p></p><a target="_blank" href="https://app.mavenanalytics.io/learning-plan">Maven Analytics</a></p>
+        </p>
+    </article>
+    <article class="content">
+        <h4>Certification</h4>
+        <p>
+        <p><a target="_blank" href="https://www.pmi.org/">Project Management Associate - CPMA: 1</a></p>
+        <p><a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/data-analytics-microsoft/1-introduction">PL 300
+                - Power BI</a></p>
+        </p>
+    </article>
+    <article class="content">
+        <h4>Data Structures</h4>
+        <p>
+            <a target="_blank" href="https://www.youtube.com/playlist?list=PLdQUW0_DsGt0Safe5g9iimRbSydxJ_g9Y">Data
+                Structures Laboratory</a>
+        </p>
+    </article>
+    <article class="content">
+        <h4>Codanics</h4>
+        <p>
+            <p><a target="_blank" href="https://codanics.com/">Codanics</a></p>
+            <p><a target="_blank" href="https://www.youtube.com/playlist?list=PL9XvIvvVL50Fba7psesg6ynQXdipw-yoN">Python Ka Chilla</a></p>
+        </p>
+    </article>
+    <article class="content">
+        <h4>Jobs ka Name pa chona</h4>
+        <p><a target="_blank" href="https://mmi.edu.pk/jobs/head-of-quality-assurance-required/">Memon</a></p>
+        <p></p><a target="_blank" href="https://tabbaheart.org/find-a-job/">tabbaheart</a></p>
+        <p></p><a target="_blank" href="https://baqai.edu.pk/Jobs.php">baqai</a></p>
+        <p></p><a target="_blank" href="https://www.lnh.edu.pk/careers">Liaquat National Hospital</a></p>
+        <p></p><a target="_blank" href="https://www.aku.edu/careers/Pages/home.aspx">Aga Khan</a></p>
+        <p></p><a target="_blank" href="https://www.ziauddinhospital.com/careers/">ziauddin hospital</a></p>
+        <p></p><a target="_blank" href="https://www.duhs.edu.pk/career">Dow Hospital</a></p>
+        <p></p><a target="_blank" href="https://jobportal.tih.org.pk/">Indus Hospital</a></p>
+        <p></p><a target="_blank" href="https://mamjihospital.com/careers/">Mamji Hospital</a></p>
+        <p></p><a target="_blank" href="https://siut.org/join-us/careers/">siut</a></p>
+        <p></p><a target="_blank" href="https://pakmh.com/">Pakistan Mental Health Coilation</a></p>
+        <p></p><a target="_blank" href="https://savaira.org/about-us/">savaira</a></p>
+        <p></p><a target="_blank" href="https://ird.global/careers/">IRD Global</a></p>
+        <p></p><a target="_blank" href="https://taskeen.org/careers/">taskeen</a></p>
+    </article>
+</body>
+
+</html>

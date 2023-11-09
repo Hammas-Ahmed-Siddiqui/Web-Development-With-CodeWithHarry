@@ -1,0 +1,36 @@
+In HTML, the terms "POST" and "GET" are not specific to HTML but rather refer to two different HTTP methods that are used for submitting data to a web server. These methods are commonly associated with HTML forms, but they can be used in various web development contexts, not just HTML.
+
+GET Method:
+
+- The GET method is used for requesting data from a specified resource.
+- It appends data to the URL in the form of query parameters. This means that data is visible in the URL, making it less secure and not suitable for sensitive or large amounts of data.
+- GET requests are idempotent, which means they can be repeated without affecting the state of the server.
+- GET requests are typically used when you want to retrieve data from a server. For example, when you click on a link or submit a search query in a web browser, a GET request is often used.
+
+
+Example HTML form using the GET method:
+
+<form action="example.php" method="get">
+    <input type="text" name="search" value="Search..."/>
+    <input type="submit" value="Submit"/>
+</form>
+
+
+
+POST Method:
+
+- The POST method is used for sending data to be processed to a specified resource, typically through the body of the HTTP request.
+- POST requests are more secure than GET requests, as the data is not visible in the URL.
+- POST requests are not idempotent, meaning that multiple identical requests may have different effects on the server (e.g., creating a new resource each time).
+- POST requests are commonly used for submitting forms that include sensitive information, like login credentials or when you need to send a large amount of data.
+
+
+Example HTML form using the POST method:
+
+<form action="process.php" method="post">
+    <input type="text" name="username" placeholder="Username"/>
+    <input type="password" name="password" placeholder="Password"/>
+    <input type="submit" value="Login"/>
+</form>
+
+When creating HTML forms, you specify the HTTP method using the method attribute within the <form> element. Depending on your use case and the type of data you're working with, you choose between the GET and POST methods to submit form data to the server.
